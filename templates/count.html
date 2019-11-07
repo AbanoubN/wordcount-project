@@ -1,0 +1,17 @@
+<h1>there are {{ count }} in you text</h1>
+
+<<a href={% url 'about'%}>About Us</a>
+
+<h1>Full Text is:</h1>
+
+{{fulltext}}
+
+<h1>dic</h1>
+
+{% for word , counttotal in wordic1 %}
+
+{{word}}
+<br/>
+{{counttotal}}
+<br/>
+{% endfor %}
